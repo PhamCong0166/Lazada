@@ -290,11 +290,13 @@
       .card_bottom {
           height: 100px;
       }
-
+      .footer_first ul
+      {
+        margin-left: 5px;
+      }
       .footer_first ul li>a {
           font-size: 8px;
           line-height: 2px;
-          padding-left: 10px;
       }
 
 
@@ -442,12 +444,13 @@
       }
 
       .fs_right {
-          width: 140px;
+          width: 190px;
           height: 29px;
+          margin: 5px 0px 0px 0px;
       }
 
       .fs_right p {
-          font-size: 9px;
+          font-size: 7px;
       }
 
       /*item fs*/
@@ -502,6 +505,12 @@
           font-size: 58%;
       }
 
+      .pps_items .first_item .item>img
+      {
+           width: 50%;
+    margin: auto;
+      }
+   
       /*.........................................Colection ..................................*/
       .colection_product {
           flex-wrap: wrap;
@@ -581,16 +590,19 @@
           height: 80px;
       }
 
+      .footer_first ul
+      {
+        margin-left: 10px;
+      }
       .footer_first ul li>a {
           font-size: 7px;
           line-height: 2px;
-          padding-left: 10px;
+    
       }
 
 
 
       .bottom_content_intro p {
-          color: #0f136d;
           font-size: 8px;
           line-height: 15px;
           margin-top: 10px;
