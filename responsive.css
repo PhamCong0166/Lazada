@@ -1,0 +1,636 @@
+  @media screen and (max-width:992px) {
+
+      /*header*/
+      .item-list {
+          width: 27%;
+          /*slider*/
+      }
+
+      /*.......................page....................................*/
+
+
+      .card_content a {
+          font-size: 13px;
+      }
+
+      p.fs_product {
+          font-size: 13px;
+      }
+
+
+      p.fs_price {
+
+          font-size: 15px;
+      }
+
+
+  }
+
+
+
+
+  @media screen and (max-width:767px) {
+
+      .card-banner .banner {
+          height: 50px;
+
+      }
+
+      .header-nav-list {
+          display: none;
+      }
+
+      .logo-bar--search_engine .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+      }
+
+      .logo-bar--search_engine .container .logo a {
+          display: flex;
+          justify-content: center;
+      }
+
+      .logo-bar--search_engine .logo img {
+          height: 70px;
+          width: 40%;
+          margin: 0px;
+      }
+
+      .logo-bar--search_engine .search_engine input {
+          height: 35px;
+      }
+
+      .logo-bar--search_engine .search_engine .bar_btn {
+          font-size: 20px;
+          color: blue;
+          display: block;
+      }
+
+      .logo-bar--search_engine .search_engine .btn {
+          height: 35px;
+      }
+
+      .logo-bar--search_engine .search_engine .add_on_card {
+          font-size: 20px;
+          padding: 0px 10px 0px 10px;
+          display: flex;
+          align-items: center;
+          color: blue;
+
+
+      }
+
+      .logo-bar--search_engine .sm-banner {
+
+          display: none;
+      }
+
+      ::-webkit-input-placeholder {
+
+          font-size: 19px;
+      }
+
+      .slider-banner {
+          height: auto;
+      }
+
+      .slider-banner .container .slider {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+      }
+
+      .item-list {
+
+          width: 100%;
+          height: 50%;
+          display: flex;
+          justify-content: center;
+          display: none;
+      }
+
+      .slider-banner .container .slider .slider-item {
+          width: 100%;
+          height: 230px;
+      }
+
+      /*................4 card content....................*/
+      .card_content {
+          flex-wrap: wrap;
+      }
+
+      .card_content a {
+          font-size: 12px;
+          width: 48%;
+          margin-top: 10px;
+
+      }
+
+      /*responsive ngày 27/12*/
+
+      /* title common*/
+      .common_title {
+          font-size: 15px;
+          font-weight: bold;
+          padding-left: 5px;
+      }
+
+      /*responsive flashsale*/
+      .fs_header .fs_left .status_text {
+          font-size: 13px;
+      }
+
+      .fs_header .fs_left .status_timer p {
+          font-size: 13px;
+
+      }
+
+      .fs_header .fs_left .status_timer {
+          padding-left: 15px;
+      }
+
+      .fs_header .fs_left .status_timer>.time {
+          width: 25px;
+          height: 25px;
+      }
+
+      .min,
+      .sec {
+          font-size: 13px;
+      }
+
+      .fs_right {
+          width: 195px;
+          height: 29px;
+      }
+
+      .fs_right p {
+          font-size: 13px;
+      }
+
+      /*item fs*/
+      .fs_banner .fs_items {
+          flex-wrap: wrap
+      }
+
+      .fs_banner .fs_items a {
+          width: 30%;
+          font-size: 12px;
+      }
+
+      .fs_banner .fs_items .item {
+          height: 90%;
+          padding-top: 10px;
+      }
+
+
+
+      /*.........................................popular search..................................*/
+      .pps_items .item p {
+          font-size: 13px;
+          text-align: center;
+      }
+
+      .pps_items .first_item {
+          display: flex;
+          justify-content: center;
+          width: 50%;
+      }
+
+      .pps_items .first_item .item.item4.col_item {
+          display: none;
+      }
+
+      .item.item5.col_item {
+          display: none;
+      }
+
+      .pps_items .item1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      small.pps_product__amount {
+          text-align: center;
+      }
+
+      small {
+          font-size: 58%;
+      }
+
+      /*.........................................Colection ..................................*/
+      .colection_title {
+          font-size: 12px;
+          padding-bottom: 0px;
+      }
+
+      .item a {
+          /* margin: 5px; */
+          margin: 0px 5px 20px 0px;
+      }
+
+      .colection_product .item .img {
+          display: flex;
+          padding: 15px 0px 15px 0px;
+      }
+
+      .colection_product .item .img img {
+
+          width: 27%;
+          margin-left: 5px;
+      }
+
+      /*.........................................LallMall ..................................*/
+      .lazmall_text:before {
+          width: 25px;
+          height: 25px;
+          top: -15%;
+          left: 45%;
+      }
+
+      p.lazmall_title {
+          font-size: 13px;
+      }
+
+      .lazmall_prouct__card {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .lazmall_prouct__card .item {
+          width: 32%;
+          height: 200px;
+          margin: 2px;
+      }
+
+      /*.........................................ForU ..................................*/
+      .forU_banner {
+          flex-wrap: wrap;
+          width: 100%;
+          height: 100%;
+          justify-content: space-around;
+      }
+
+      a.forU_card.item1 {
+          width: 32%;
+          height: 30%;
+      }
+
+      .forU_card>img {
+          height: 150px;
+
+      }
+
+
+      /*footer*/
+      .card_bottom {
+          height: 100px;
+      }
+
+      .footer_first ul li>a {
+          font-size: 8px;
+          line-height: 2px;
+          padding-left: 10px;
+      }
+
+
+
+      .bottom_content_intro p {
+          color: #0f136d;
+          font-size: 8px;
+          line-height: 15px;
+          margin-top: 10px;
+          margin-left: 20px;
+      }
+
+
+  }
+
+  /*end responsive*/
+
+
+  /*........................................................*/
+  @media screen and (max-width:500px) {
+
+      .card-banner .banner {
+          height: 35px;
+
+      }
+
+      .logo-bar--search_engine .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+      }
+
+      .logo-bar--search_engine .container .logo a {
+          display: flex;
+          justify-content: center;
+      }
+
+      .logo-bar--search_engine .logo img {
+          height: 40px;
+          width: 30%;
+          margin: 0px;
+      }
+
+      .logo-bar--search_engine .search_engine {
+          width: 100%;
+          display: flex;
+
+      }
+
+      .logo-bar--search_engine .search_engine input {
+          height: 35px;
+      }
+
+
+      .logo-bar--search_engine .search_engine .btn {
+          height: 35px;
+      }
+
+      .logo-bar--search_engine .search_engine .bar_btn {
+          font-size: 17px;
+
+      }
+
+      .logo-bar--search_engine .search_engine .add_on_card {
+          font-size: 17px;
+
+
+
+      }
+
+      .logo-bar--search_engine .sm-banner {
+
+          display: none;
+      }
+
+      ::-webkit-input-placeholder {
+
+          font-size: 12px;
+      }
+
+      .slider-banner .container .slider {
+          height: 100%;
+          width: 100%;
+      }
+
+      .slider-banner .container .slider {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .item-list {
+          display: flex;
+          width: 100%;
+          height: 50%;
+
+          justify-content: center;
+          display: none;
+      }
+
+      .slider-banner .container .slider .slider-item {
+          display: flex;
+
+          width: 100%;
+          height: 170px;
+      }
+
+
+
+
+
+
+
+
+      /* title common*/
+      .common_title {
+          font-size: 12px;
+          font-weight: bold;
+          padding-left: 3px;
+      }
+
+      /*responsive flashsale*/
+      .fs_header .fs_left .status_text {
+          font-size: 9px;
+      }
+
+      .fs_header .fs_left .status_timer p {
+          font-size: 9px;
+
+      }
+
+      .fs_header .fs_left .status_timer {
+          padding-left: 8px;
+          padding-right: 4px;
+      }
+
+      .fs_header .fs_left .status_timer>.time {
+          width: 20px;
+          height: 20px;
+      }
+
+      .min,
+      .sec {
+          font-size: 9px;
+      }
+
+      .fs_right {
+          width: 140px;
+          height: 29px;
+      }
+
+      .fs_right p {
+          font-size: 9px;
+      }
+
+      /*item fs*/
+      .fs_banner .fs_items {
+          flex-wrap: wrap
+      }
+
+      .fs_banner .fs_items a {
+          width: 30%;
+          font-size: 9px;
+      }
+
+      .fs_banner .fs_items .item {
+          height: 90%;
+          padding-top: 10px;
+      }
+
+      .card_content a {
+          font-size: 9px;
+      }
+
+      p.fs_product {
+          font-size: 11px;
+      }
+
+
+      p.fs_price {
+
+          font-size: 12px;
+      }
+
+
+      /*.........................................popular search..................................*/
+      .pps_items {
+          flex-wrap: wrap;
+      }
+
+      .pps_items .item p {
+          font-size: 11px;
+      }
+
+      .pps_items .first_item {
+          width: 100%;
+          height: 200px;
+      }
+
+      .col_item {
+          width: 33%;
+      }
+
+      small {
+          font-size: 58%;
+      }
+
+      /*.........................................Colection ..................................*/
+      .colection_product {
+          flex-wrap: wrap;
+      }
+
+      .colection_product .item {
+          width: 50%;
+      }
+
+      .colection_title {
+          font-size: 11px;
+          margin-top: 2px;
+      }
+
+      .item a {
+          /* margin: 5px; */
+          margin: 0px 3px 3px 0px;
+      }
+
+      /*.........................................LallMall ..................................*/
+      .lazmall_text:before {
+          width: 20px;
+          height: 20px;
+          top: -15%;
+          left: 45%;
+      }
+
+
+
+      p.lazmall_title {
+          font-size: 11px;
+      }
+
+      .lazmall_prouct__card {
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .lazmall_prouct__card .item {
+          width: 32%;
+          height: 130px;
+          margin: 10px 0px 0px 0px;
+
+      }
+
+      .lazmall_prouct__card .item img {
+          height: 46%;
+      }
+
+      /*.........................................ForU ..................................*/
+
+      a.forU_card.item1 {
+          width: 32%;
+          height: 30%;
+      }
+
+
+      .forU_card>img {
+          height: 100px;
+
+      }
+
+      p.forU_title {
+          font-size: 11px;
+      }
+
+      p.forU_price {
+          font-size: 10px;
+      }
+
+      p.forU_origin_price {
+          font-size: 9px;
+      }
+
+      /*footer*/
+      .card_bottom {
+          height: 80px;
+      }
+
+      .footer_first ul li>a {
+          font-size: 7px;
+          line-height: 2px;
+          padding-left: 10px;
+      }
+
+
+
+      .bottom_content_intro p {
+          color: #0f136d;
+          font-size: 8px;
+          line-height: 15px;
+          margin-top: 10px;
+          margin-left: 10px;
+      }
+
+      p.dowload_app {
+          font-size: 10px;
+      }
+
+      .slogan_title {
+          font-size: 10px;
+      }
+
+
+      .left .top_title>.logo {
+    height: 25px;
+    width: 25px;
+    background-size: 100% 100%;
+}
+
+
+.dowload_img>.android {
+  background-position: center;
+    background-size: 100% ;
+ 
+}
+.dowload_img>.ios {
+  background-position: center;
+    background-size: 100% ;
+ 
+}
+
+
+
+  }
+
+  /*end responsive*/
+  }
+
+  /*4 tab card  content*/
+
+  /*...........................................................
