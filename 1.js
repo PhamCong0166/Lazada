@@ -13,6 +13,10 @@ let bgColor = [
     "#2883FE",
     " #01AE74 "
 ]
+
+
+
+
 const product = [{
         item: "item1",
         name: "kéo",
@@ -912,7 +916,13 @@ let ppl_item_main = document.querySelector(".pps_items");
 let ppl_item1 = document.querySelector(".pps_items .item1");
 
 
-
+let bgColor_ppl = [
+    "rgb(204, 233, 204)",
+    "rgb(218, 236, 245)",
+    "rgb(245, 218, 241)",
+    "rgb(243, 225, 204)",
+    " rgb(243, 210, 248)"
+]
 let ppl_item_another = document.querySelector(".pps_items .col_item");
 console.log(ppl_item_another);
 
@@ -951,6 +961,8 @@ function ppl_item_loading_another_item() {
     ppl_item_main.appendChild(newDiv_ppl_loading);
     /* console.log(".................newItem................");*/
     let randomObject_1 = Math.floor(Math.random() * product_ppl.length);
+    let randomObject_bg = Math.floor(Math.random() * bgColor_ppl.length);
+
     console.log("random1:"+randomObject_1)
     let randomValue_1 = product_ppl[randomObject_1];
     let newText =
@@ -985,6 +997,8 @@ function ppl_item_loading_another_item() {
     newDiv_ppl_loading.innerHTML = newText + newText_2;
      remove_1 = product_ppl.splice(randomObject_1, 1)
 
+      newDiv_ppl_loading.style.backgroundColor = bgColor_ppl[randomObject_bg];
+      let remove_2 = bgColor_ppl.splice(randomObject_bg, 1);
 
 }
 
