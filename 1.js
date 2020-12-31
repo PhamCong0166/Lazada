@@ -360,9 +360,83 @@ const product = [{
         content: "đây là mũ bảo hiểm",
         price: "50.000 VND",
         oldPrice: "140.000VND"
+    },
+    {
+        item: "item12",
+        name: "2 Hộp Đựng Đồ Mini",
+        url: "https://vn-test-11.slatic.net/p/b61f94a26ac00418048f1288c23a371b.jpg_200x200Q100.jpg_.webp",
+        content: "đây là mũ bảo hiểm",
+        price: "58.000 VND",
+        oldPrice: "170.000VND"
     }
 
+    ,
+    {
+        item: "item12",
+        name: "Áo Sowmi Cổ Tàu",
+        url: "https://vn-test-11.slatic.net/p/e5cbdc0db79b5258ba597027b5242350.jpg_200x200Q100.jpg_.webp",
+        content: "đây là mũ bảo hiểm",
+        price: "80.000 VND",
+        oldPrice: "140.000VND"
+    }
 
+    ,
+    {
+        item: "item12",
+        name: "Kính Cường Lực Chống Bụi Bẩn",
+        url: "https://vn-test-11.slatic.net/p/ebf7510f9890732b1e5351aa32249d40.jpg_200x200Q100.jpg_.webp",
+        content: "đây là mũ bảo hiểm",
+        price: "20.000 VND",
+        oldPrice: "80.000VND"
+    }
+
+    ,
+    {
+        item: "item12",
+        name: "Balo Cho Học Sinh Cấp 2",
+        url: "https://vn-test-11.slatic.net/p/mdc/da6e9d9b041b6945da5b34b633fe7d03.jpg_200x200Q100.jpg_.webp",
+        content: "đây là mũ bảo hiểm",
+        price: "50.000 VND",
+        oldPrice: "140.000VND"
+    }
+
+    ,
+    {
+        item: "item12",
+        name: "Xí Muội Thái",
+        url: "https://vn-test-11.slatic.net/p/mdc/672fb239d956f27edab6c3b3722f79ef.jpg_200x200Q100.jpg_.webp",
+        content: "đây là mũ bảo hiểm",
+        price: "80.000 VND",
+        oldPrice: "740.000VND"
+    }
+
+    ,
+    {
+        item: "item12",
+        name: "Kẹp Tóc Phong Cách",
+        url: "https://my-live-02.slatic.net/p/53bb2acfc0a0d42a9fb0b42a70653f5f.jpg",
+        content: "đây là mũ bảo hiểm",
+        price: "50.000 VND",
+        oldPrice: "140.000VND"
+    }
+
+    ,
+    {
+        item: "item12",
+        name: "50 Phong Bao Lì Xì",
+        url: "https://vn-test-11.slatic.net/p/54e58457959ba09a0b35cad5b7288c5e.jpg_200x200Q100.jpg_.webp",
+        content: "đây là mũ bảo hiểm",
+        price: "15.000 VND",
+        oldPrice: " 40.000VND"
+    },
+    {
+        item: "item12",
+        name: "Gấu Bông Hình Qủa Chuối",
+        url: "https://vn-test-11.slatic.net/p/mdc/937d7993bd4564d6a5abc6bd1d5bb591.jpg_200x200Q100.jpg_.webp",
+        content: "đây là mũ bảo hiểm",
+        price: "50.000 VND",
+        oldPrice: "140.000VND"
+    }
 
 
 
@@ -604,17 +678,17 @@ function createForUBanner() {
 }
 
 function item_1() {
-    console.log(".................newItem................");
+    /*  console.log(".................newItem................");*/
 
     let randomObject = Math.floor(Math.random() * product.length);
     randomValue = product[randomObject];
-    console.log("random:" + randomObject);
-    console.log(randomValue)
-    console.log("--------------------------");
+    /*    console.log("random:" + randomObject);
+        console.log(randomValue)
+        console.log("--------------------------");
 
-    console.log("productLength" + product.length);
-    console.log("--------------------------");
-
+        console.log("productLength" + product.length);
+        console.log("--------------------------");
+    */
     let newText =
 
         ` 
@@ -924,7 +998,6 @@ let bgColor_ppl = [
     " rgb(243, 210, 248)"
 ]
 let ppl_item_another = document.querySelector(".pps_items .col_item");
-console.log(ppl_item_another);
 
 
 function ppl_item_loading() {
@@ -945,7 +1018,6 @@ function ppl_item_loading() {
      
     `
     let remove = product.splice(randomObject, 1)
-    console.log(ppl_item1)
     ppl_item1.innerHTML = newText;
 }
 
@@ -962,8 +1034,8 @@ function ppl_item_loading_another_item() {
     /* console.log(".................newItem................");*/
     let randomObject_1 = Math.floor(Math.random() * product_ppl.length);
     let randomObject_bg = Math.floor(Math.random() * bgColor_ppl.length);
-
-    console.log("random1:"+randomObject_1)
+    /*
+        console.log("random1:"+randomObject_1)*/
     let randomValue_1 = product_ppl[randomObject_1];
     let newText =
         ` 
@@ -980,7 +1052,6 @@ function ppl_item_loading_another_item() {
         `
     let remove_1 = product_ppl.splice(randomObject_1, 1)
     randomObject_1 = Math.floor(Math.random() * product_ppl.length);
-    console.log("random2:"+randomObject_1)
 
     randomValue_1 = product_ppl[randomObject_1];
 
@@ -995,10 +1066,10 @@ function ppl_item_loading_another_item() {
                                 </a>   `
 
     newDiv_ppl_loading.innerHTML = newText + newText_2;
-     remove_1 = product_ppl.splice(randomObject_1, 1)
+    remove_1 = product_ppl.splice(randomObject_1, 1)
 
-      newDiv_ppl_loading.style.backgroundColor = bgColor_ppl[randomObject_bg];
-      let remove_2 = bgColor_ppl.splice(randomObject_bg, 1);
+    newDiv_ppl_loading.style.backgroundColor = bgColor_ppl[randomObject_bg];
+    let remove_2 = bgColor_ppl.splice(randomObject_bg, 1);
 
 }
 
@@ -1013,3 +1084,149 @@ ppl_item_loading_another_item()
 ppl_item_loading_another_item()
 
 ppl_item_loading_another_item()
+/*........................random colection.....................................*/
+
+
+let product_collection_item = [
+
+    {
+        id: 1,
+
+        name: "Túi Tote",
+        url_1: "https://vn-test-11.slatic.net/p/17878e5867c091e8d8cf3a7fa20fdf24.jpg_80x80Q100.jpg_.webp",
+        url_2: "https://vn-test-11.slatic.net/p/20cf60744a57181da342533dd908a8be.jpg_80x80Q100.jpg_.webp",
+        url_3: "https://vn-test-11.slatic.net/original/2b244f76619bc710cdbc6f7305cd74d9.jpg_80x80Q100.jpg_.webp",
+        quantity: "2406 sản phẩm",
+    },
+
+    {
+        id: 2,
+
+        name: "Serum Vitamin C",
+        url_1: "https://vn-test-11.slatic.net/p/fe1c4ea0daee24588cda447987920de9.jpg_80x80Q100.jpg_.webp",
+        url_2: "https://vn-test-11.slatic.net/p/3986db3650ef5e8366c8d7d031d2ad47.jpg_80x80Q100.jpg_.webp",
+        url_3: "https://vn-test-11.slatic.net/p/f90b46b5627bc2d13b3d211161f9179f.jpg_80x80Q100.jpg_.webp",
+        quantity: "2758 sản phẩm",
+    },
+
+    {
+        id: 3,
+
+        name: "Tivi Samsung",
+        url_1: "https://vn-test-11.slatic.net/p/5683bae57e67130d20a6c5d1201350fb.jpg_150x150Q100.jpg_.webp",
+        url_2: "https://vn-test-11.slatic.net/p/61347d968b1c0143efd5aaacccd7a15c.jpg_80x80Q100.jpg_.webp",
+        url_3: "https://vn-test-11.slatic.net/p/b52cc98afd45a8ad402f5ae0f9ae375a.jpg_80x80Q100.jpg_.webp",
+        quantity: "358 sản phẩm",
+    },
+    {
+        id: 4,
+
+        name: "Ba Lô Học Sinh",
+        url_1: "https://vn-test-11.slatic.net/p/92d2e21b937d4a82c20a49b17d3b1cc0.jpg_80x80Q100.jpg_.webp",
+        url_2: "https://vn-test-11.slatic.net/p/214d89210ef001c7fb54654a7e169b87.jpg_80x80Q100.jpg_.webp",
+        url_3: "https://vn-test-11.slatic.net/p/f7153f672066bcc3340a8a50c50cfa3b.jpg_80x80Q100.jpg_.webp",
+        quantity: "145 sản phẩm",
+    },
+    {
+        id: 5,
+
+        name: "Quần Jean Nữ",
+        url_1: "https://vn-test-11.slatic.net/p/61347d968b1c0143efd5aaacccd7a15c.jpg_80x80Q100.jpg_.webp",
+        url_2: "https://vn-test-11.slatic.net/p/a42a3bdc247111b9d189a0824a11ebf8.jpg_80x80Q100.jpg_.webp",
+        url_3: "https://vn-test-11.slatic.net/p/966d0a26e7caf9e02e01a2fa50a63820.jpg_80x80Q100.jpg_.webp",
+        quantity: "14578 sản phẩm",
+    },
+    {
+        id: 6,
+
+        name: "Camera Wifi",
+        url_1: "https://vn-test-11.slatic.net/p/2/camera-ip-wifi-siepem-hd-720-s6203y-3808-32895193-a0875a0045b8f71f70fbe4b63acf011e-catalog.jpg_80x80Q100.jpg_.webp",
+        url_2: "https://vn-test-11.slatic.net/original/d86836540929a3ef16faf3ae24a8aa25.jpg_80x80Q100.jpg_.webp",
+        url_3: "https://vn-test-11.slatic.net/p/97083b564f318f013601885f481a8d08.jpg_80x80Q100.jpg_.webp",
+
+        quantity: "4548 sản phẩm",
+    },
+    {
+        id: 7,
+
+        name: "Ao thun",
+        url_1: "https://vn-test-11.slatic.net/p/c65783b4999a7ab15292f0967651d53c.jpg_80x80Q100.jpg_.webp",
+        url_2: "https://vn-test-11.slatic.net/p/d81f348da3eb9b1848d6d485450aef76.jpg_80x80Q100.jpg_.webp",
+        url_3: "https://my-live-02.slatic.net/original/8c310d43219b968908f7f430f8769814.jpg",
+
+        quantity: "48 sản phẩm",
+    },
+    {
+        id: 8,
+
+        name: "Đồ Gia Dụng",
+        url_1: "https://vn-test-11.slatic.net/p/7d59900fcf4c97411e47ee0db1a5150d.jpg_80x80Q100.jpg_.webp",
+        url_2: "https://vn-test-11.slatic.net/p/347f231d9464990843fbf0e9dfbb0951.jpg_80x80Q100.jpg_.webp",
+        url_3: "https://vn-test-11.slatic.net/p/b3ac86af27a827e929c2535f233c741f.jpg_80x80Q100.jpg_.webp",
+
+        quantity: "78578 sản phẩm",
+    },
+
+
+
+
+]
+
+
+let colection_product = document.querySelector(".colection_product");
+
+
+function colection_Item_Loading_Item() {
+    let newDiv_colection_loading = document.createElement('div');
+    newDiv_colection_loading.className = ('colection_card item item1');
+    colection_product.appendChild(newDiv_colection_loading);
+
+    /*code*/
+    let randomObject = Math.floor(Math.random() * product_collection_item.length);
+    randomValue = product_collection_item[randomObject];
+    let newText =
+        ` 
+                   <a href="#" class="item_top common_colection">
+                                    <p class="colection_title">
+                                        ${randomValue.name}
+                                    </p>
+                                    <div class="img">
+                                        <img src="${randomValue.url_1}" alt="#">
+                                        <img src="${randomValue.url_2}" alt="#">
+                                        <img src="${randomValue.url_3}" alt="#">
+
+                                    </div>
+                                    <small class="product_amount">
+                                       ${randomValue.quantity}
+                                    </small>
+                                </a>
+        `
+    let remove_1 = product_collection_item.splice(randomObject, 1);
+
+    randomObject = Math.floor(Math.random() * product_collection_item.length);
+
+    randomValue= product_collection_item[randomObject];
+
+    let newText_2 = `          <a href="#" class="item_top common_colection">
+                                    <p class="colection_title">
+                                        ${randomValue.name}
+                                    </p>
+                                    <div class="img">
+                                        <img src="${randomValue.url_1}" alt="#">
+                                        <img src="${randomValue.url_2}" alt="#">
+                                        <img src="${randomValue.url_3}" alt="#">
+
+                                    </div>
+                                    <small class="product_amount">
+                                       ${randomValue.quantity}
+                                    </small>
+                                </a>  `
+
+    newDiv_colection_loading.innerHTML = newText + newText_2;
+    remove_1 = product_collection_item.splice(randomObject, 1)
+
+}
+colection_Item_Loading_Item()
+colection_Item_Loading_Item()
+colection_Item_Loading_Item()
+colection_Item_Loading_Item()
